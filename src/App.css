@@ -1,12 +1,10 @@
-/* Main container */
-.app-container {
+.wrapper {
   background-color: #f0f2f5;
   min-height: 100vh;
   font-family: sans-serif;
 }
 
-/* Header */
-.app-header {
+.header {
   display: flex;
   justify-content: center;
   padding: 15px;
@@ -16,30 +14,28 @@
   font-weight: bold;
 }
 
-/* Main content flex container */
-.main-content {
+.content {
   display: flex;
   gap: 20px;
   padding: 20px;
 }
 
-/* Left: Schema Editor */
-.schema-editor {
+.editor {
   flex: 1;
   position: relative;
 }
 
-.schema-editor-header {
+.editorTop {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.section-title {
+.title {
   color: #333;
 }
 
-.copy-json-button {
+.copyBtn {
   padding: 5px 10px;
   font-size: 12px;
   cursor: pointer;
@@ -49,7 +45,7 @@
   background: #fff;
 }
 
-.schema-textarea {
+.textarea {
   width: 100%;
   min-width: 300px;
   max-width: 100%;
@@ -64,37 +60,36 @@
   resize: vertical;
 }
 
-.schema-textarea.error {
+.textarea.error {
   border: 2px solid red;
 }
 
-/* Right: Live Form */
-.live-form-container {
+.formContainer {
   flex: 1;
 }
 
-.form-wrapper {
+.form {
   background: #fff;
   padding: 25px;
   border-radius: 12px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-.form-field {
+.field {
   margin-bottom: 15px;
 }
 
-.form-label {
+.label {
   display: block;
   margin-bottom: 5px;
   font-weight: bold;
 }
 
-.password-field-wrapper {
+.passWrapper {
   position: relative;
 }
 
-.form-input {
+.input {
   width: 100%;
   padding: 10px;
   border-radius: 6px;
@@ -102,7 +97,7 @@
   box-sizing: border-box;
 }
 
-.password-toggle {
+.toggle {
   position: absolute;
   right: 10px;
   top: 10px;
@@ -112,18 +107,18 @@
   font-weight: bold;
 }
 
-.radio-group {
+.radioGroup {
   display: flex;
   gap: 10px;
   margin-top: 5px;
 }
 
-.error-message {
+.errMsg {
   color: red;
   font-size: 11px;
 }
 
-.submit-button {
+.submitBtn {
   width: 100%;
   padding: 12px;
   background: #1890ff;
@@ -134,8 +129,7 @@
   cursor: pointer;
 }
 
-/* Modal */
-.modal-overlay {
+.overlay {
   position: fixed;
   top: 0;
   left: 0;
@@ -148,7 +142,7 @@
   z-index: 1000;
 }
 
-.modal-content {
+.modal {
   background: #fff;
   padding: 30px;
   border-radius: 12px;
@@ -158,11 +152,11 @@
   animation: scaleUp 0.3s ease-out forwards;
 }
 
-.modal-title {
+.modalTitle {
   margin-top: 0;
 }
 
-.modal-output {
+.output {
   background: #f4f4f4;
   padding: 15px;
   border-radius: 6px;
@@ -170,13 +164,13 @@
   overflow-x: auto;
 }
 
-.modal-buttons {
+.btnGroup {
   display: flex;
   gap: 10px;
   margin-top: 20px;
 }
 
-.modal-button {
+.btn {
   flex: 1;
   padding: 10px;
   color: #fff;
@@ -185,15 +179,14 @@
   cursor: pointer;
 }
 
-.modal-button-copy {
+.btnCopy {
   background: #52c41a;
 }
 
-.modal-button-close {
+.btnClose {
   background: #ff4d4f;
 }
 
-/* Modal animation */
 @keyframes scaleUp {
   from {
     transform: scale(0.7);
